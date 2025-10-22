@@ -16,7 +16,7 @@ int main(int argc, char** argv)
     int h4 = (a <= e && b <= f && c <= d);
     int h5 = (a <= f && b <= d && c <= e);
     int h6 = (a <= f && b <= e && c <= d);
-    int H = h1 || h2 || h3 || h4 || h5 || h6;
+    int H =  h1 |  h2 | h3 | h4 |  h5 | h6;
 
     int s1 = (d <= a && e <= b && f <= c);
     int s2 = (d <= a && e <= c && f <= b);
@@ -24,7 +24,7 @@ int main(int argc, char** argv)
     int s4 = (d <= b && e <= c && f <= a);
     int s5 = (d <= c && e <= a && f <= b);
     int s6 = (d <= c && e <= b && f <= a);
-    int S = s1 || s2 || s3 || s4 || s5 || s6;
+    int S = s1 | s2 | s3 | s4 | s5 | s6;
 
     if (H && S)
     {
